@@ -366,7 +366,7 @@ h1, h2, h3, h4, h5, h6,
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   line-height: 1.2;
-  color: #262626;
+  color: var(--textblue);
 }
 
 h1, .h1 {
@@ -3899,9 +3899,13 @@ input[type=button].btn-block {
     justify-content: center;
   }
 }
+.height-content{
+  color: #848484
+}
 @media (min-width: 992px){
   .height-content{
-    height: 120px;
+    height: 140px;
+    
   }
 }
 
@@ -5770,7 +5774,22 @@ a.close.disabled {
   color: #fff;
   text-align: center;
 }
-
+@media (max-width: 576px){
+  .carousel-caption h4{
+    font-size: 16px;
+  }
+  .carousel-caption a{
+    font-size: 18px;
+  }
+  .form-control-lg{
+    width: 100%;
+  }
+  .input-group-append{
+    display: block;
+    width: 100%;
+    margin-top: 1rem;
+  }
+}
 @keyframes spinner-border {
   to {
     transform: rotate(360deg);
@@ -9910,7 +9929,15 @@ h6 {
 .title-text{
   font-size: 65px;
 }
+.text-title{
+  color: var(--textblue)
+}
 
+@media (min-width: 992px) and (max-width: 1200px){
+  .title-text{
+    font-size: 56px;
+  }
+}
 .content-box{
   padding-left: 100px;
 }
@@ -9921,6 +9948,9 @@ h6 {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+.address-details li{
+  padding: 4px;
 }
 .details-content{
   position: relative;
@@ -10032,14 +10062,39 @@ h6 {
 .img-box img{
   width: 100%;
 }
-.card a{
-  color: #848484;
-}
+
 .card a:hover{
   text-decoration: none;
 }
+.container-content{
+  position: relative;
+  display: block;
+  height: 335px;
+}
+.container-content a{
+  position: absolute;
+  bottom: 1.25rem;
+}
+@media (min-width: 768px) and (max-width: 991.98px){
+  .height-content{
+    display: block;
+    position: relative;
+    height: 125px;
+  }
+}
+@media (min-width: 480px) and (max-width: 767.98px){
+  .container-content{
+    height: 230px;
+  }
+}
+@media (max-width: 480px){
+  
+  .container-content h5{
+    font-size: 16px;
+  }
+}
 .details-content-text h3{
-  font-size: 24px;
+  font-size: 22px;
   line-height: 36px;
   color: var(--textblue);
   text-transform: none;
@@ -10169,6 +10224,9 @@ h6 {
 .space-first-letter::first-letter{
   margin-left: 2.5rem;
 }
+.fa-comments:before{
+  color: var(--textblue)
+}
 @media (max-width: 991.98px){
   .content-box{
     padding-top: 40px;
@@ -10196,6 +10254,10 @@ h6 {
   }
   .certificate-page__content .text-comments{
     font-size: 24px;
+  }
+  .details-content-text h3{
+    font-size: 16px;
+    line-height: 24px;
   }
 }
 /*# sourceMappingURL=style.css.map */
